@@ -1,16 +1,5 @@
 #BlueJ class context
 comment0.params=
-comment0.target=void\ draw()
-comment1.params=
-comment1.target=void\ add()
-comment2.params=
-comment2.target=void\ reset()
-comment3.params=newScore
-comment3.target=void\ set(int)
-comment4.params=
-comment4.target=int\ get()
-comment5.params=
-comment5.target=void\ show()
-comment6.params=
-comment6.target=void\ hide()
-numComments=7
+comment0.target=void\ act()
+comment0.text=\r\n\ Act\ -\ hace\ lo\ que\ Rads\ quiere\ hacer.\ Este\ m\u00E9todo\ se\ llama\ "cuando\ quiera"\ o\ whenever\r\n\ los\ botones\ 'Actuar\ or\ 'Ejecutar'\ son\ presionados\ en\ el\ entorno.\r\n
+numComments=1

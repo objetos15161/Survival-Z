@@ -1,39 +1,19 @@
 import greenfoot.*;
-import java.awt.Color;
+
 /**
- * Write a description of class Counter here.
+ * Escribe una descrición de la clase Rads aquí.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @autor (tu nombre) 
+ * @versión (Un número de versión o una fecha)
  */
 public class Rads extends Actor
 {
-    int  rad= 0;
-  
-    protected void draw() 
+    /**
+     * Act - hace lo que Rads quiere hacer. Este método se llama "cuando quiera" o whenever
+     * los botones 'Actuar or 'Ejecutar' son presionados en el entorno.
+     */
+    public void act() 
     {
-        setImage(new GreenfootImage("Rads: " + rad, 24, Color.BLACK, null));
+        // Agrega tus códigos de acción aquí.
     }    
-    public void add() {
-        rad++;
-        draw();
-    }
-    public void reset() {
-        rad = 0;
-        draw();
-    }
-    public void set(int newScore) {
-        rad = newScore;
-        draw();
-    }
-    public int get() {
-        return rad;
-    }
-    public void show() {
-        draw();
-    }
-    public void hide() {
-        setImage(new GreenfootImage(1,1));
-    }
-    
 }
