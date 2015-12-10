@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed Dec 09 23:42:29 CST 2015
+#Thu Dec 10 09:30:10 CST 2015
 class.ZRadiactivo.superclass=greenfoot.Actor
 target24.type=ClassTarget
 target16.name=Scorebt
@@ -48,7 +48,7 @@ target26.editor.x=40
 class.Superviviente.superclass=greenfoot.Actor
 target32.width=90
 target3.editor.height=700
-mainWindow.width=1378
+mainWindow.width=1382
 target8.showInterface=false
 target1.typeParameters=
 target1.type=ClassTarget
@@ -531,7 +531,7 @@ class.RadAway.image=RADAWAY.gif
 dependency29.type=UsesDependency
 target5.height=50
 class.FourthPlace.superclass=ScoreLoad
-target36.editor.width=1382
+target36.editor.width=1378
 target35.showInterface=false
 dependency12.to=Particle
 dependency56.type=UsesDependency
@@ -545,9 +545,9 @@ dependency1.to=Zombie
 target37.editor.width=900
 target18.showInterface=false
 target21.type=ClassTarget
-mainWindow.y=0
+mainWindow.y=-8
 target13.name=Particle
-mainWindow.x=-7
+mainWindow.x=-8
 target16.y=550
 target16.x=190
 dependency28.from=Player
@@ -664,7 +664,7 @@ dependency66.to=Player
 target27.editor.y=20
 target27.editor.x=40
 class.GoMenu.image=GoMenu.png
-mainWindow.height=735
+mainWindow.height=744
 dependency8.from=Particle
 target10.editor.y=1
 target10.editor.x=430
