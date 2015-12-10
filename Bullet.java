@@ -7,7 +7,7 @@ import java.awt.Color;
 
 public class Bullet extends Actor
 {
-    private int speed = 100;
+    private int speed = 150;
     private boolean fromShotgun = false;
 
     public Bullet(boolean shot, int speed)

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\r\n\ Act\ -\ do\ whatever\ the\ ScoreLoad\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.params=
+comment1.target=ScoreLoad()
+comment1.text=\r\n\ \r\n
+comment2.params=recordes
+comment2.target=void\ processaDados(java.lang.String)
+comment2.text=\r\n\ processaDados(String)-\ processa\ os\ dados\ obtidos\ pela\ leitura\ do\ ficheiro\ "records.txt".\ Nomeadamente\ adiciona\ \u00E0\ listaMelhores\ a\ pontua\u00E7\u00E3o,\r\n\ mas\ nao\ adiciona\ de\ qualquer\ maneira,\ adiciona\ de\ forma\ decrescente,\ ou\ seja\ a\ maior\ pontua\u00E7\u00E3o\ fica\ na\ posi\u00E7\u00E3o\ 0\ da\ lista.\r\n
+comment3.params=
+comment3.target=java.util.List\ getList()
+comment3.text=\r\n\ getList()\ -\ retorna\ a\ lista\ que\ cont\u00E9m\ as\ pontua\u00E7\u00F5es\ ordenadas\ por\ ordem\ decrescente\r\n
+numComments=4

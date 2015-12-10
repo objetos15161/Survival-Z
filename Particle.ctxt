@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=rot\ startingSpeed\ col
+comment0.target=Particle(int,\ double,\ java.awt.Color)
+comment1.params=col
+comment1.target=void\ makeImage(java.awt.Color)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ dist()
+comment4.params=
+comment4.target=void\ fade()
+numComments=5

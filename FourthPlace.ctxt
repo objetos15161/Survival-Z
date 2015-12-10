@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\r\n\ Act\ -\ do\ whatever\ the\ DesignScoreboard\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.params=
+comment1.target=FourthPlace()
+comment1.text=\r\n\ Construtor\ da\ clase\ FourthPlace,\ simplesmente\ faz\ clear\ na\ imagem\ predefinida\ e\ define\ uma\ nova\ imagem\r\n
+comment2.params=
+comment2.target=void\ display()
+comment2.text=\r\n\ display()\ -\ faz\ display\ da\ quarta\ melhor\ pontua\u00E7\u00E3o\ alguma\ vez\ obtida\r\n
+numComments=3

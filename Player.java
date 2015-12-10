@@ -1,63 +1,67 @@
 import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.GreenfootImage;
-
 import java.awt.Color;
+import java.awt.Font;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Player extends Actor
 {
+    GreenfootImage scoreBoard = new GreenfootImage(150,100);
     private int speed = 3;
-    
     private int counter = 5;
-    
     private int health = 100;
-    
     private boolean hurt = true;
+    private int radAway;
+    
 
     private static final GreenfootImage norm = new GreenfootImage("PLAYER.gif");
     private static final GreenfootImage high = new GreenfootImage("PLAYER3.gif");
     private static final GreenfootImage med = new GreenfootImage("PLAYER5.gif");
     private static final GreenfootImage low = new GreenfootImage("PLAYER4.gif");;
-    
+
     public Player()
     {
-        setImage(norm);
+     setImage(norm);
+     radAway=0; 
     }
 
     public void addedToWorld(greenfoot.World wrld)
     {
-        move();
+     move();
     }
-
     public void act() 
     {
         move();
         shoot();
-        
+
         if (Greenfoot.getMouseInfo() == null)
             return;
         int x = Greenfoot.getMouseInfo().getX();
         int y = Greenfoot.getMouseInfo().getY();
         turnTowards(x,y);
-        
+
         Actor a = getOneIntersectingObject(Necrofago.class);
         Actor b = getOneIntersectingObject(Zombie.class);
         Actor c = getOneIntersectingObject(ZRadiactivo.class);
-        
+        Actor d = getOneIntersectingObject(Jefe.class);
+        Actor e = getOneIntersectingObject(Superviviente.class);
+
         if (a != null)
         {
             hurt(2);
-            a.move(-20);
+            a.move(-5);
             hurt = true;
         }
 
         if (b != null)
         {
             hurt(4);
-            b.move(-20);
+            b.move(-10);
             hurt = true;
         }
-        
+
         if (c != null)
         {
             hurt(1);
@@ -65,6 +69,17 @@ public class Player extends Actor
             hurt = true;
         }
         
+         if (d != null)
+        {
+            hurt(1);
+            c.move(-50);
+            hurt = true;
+        }
+         if (e != null)
+        {
+         health += 50;
+        }
+
         if (health <= 95)
             setImage(high);
         if (health <= 65)
@@ -72,7 +87,14 @@ public class Player extends Actor
         if (health <= 20)
             setImage(low);
         if (health <= 0)
-            ((Escenario)getWorld()).gameOver();
+            ((Game)getWorld()).gameOver();
+            
+       if(foundRad()) 
+          eatRad();
+       
+         //else 
+           //  move();
+      
     }  
 
     public void move()
@@ -82,7 +104,7 @@ public class Player extends Actor
         if (Greenfoot.isKeyDown("s"))
             move(-speed);
     }
-    
+
     public void move(int dist)
     {
         int x = getX();
@@ -144,7 +166,7 @@ public class Player extends Actor
             b.turn(Greenfoot.getRandomNumber(12)-6);
         }
     }
-    
+
     public void hurt(int amount)
     {
         health -= amount;
@@ -158,6 +180,46 @@ public class Player extends Actor
 
     public int getHealth()
     {
-        return health;
+     return health;
     }
+    
+    public void eatRad()
+    {
+        Actor RadAway = getOneObjectAtOffset(0, 0, RadAway.class);
+        if(RadAway != null) {
+            // eat the leaf...
+            getWorld().removeObject(RadAway);
+            radAway = health + 10; 
+        }
+    }
+    
+    public void foundRadAway()
+    {
+        Actor RadAway = getOneObjectAtOffset(0, 0, RadAway.class);
+        if(RadAway != null)
+          {
+           // eat the leaf...
+           getWorld().removeObject(RadAway);
+           radAway = health + 1; 
+          }
+    }
+    
+    public boolean foundRad()
+    {
+        Actor RadAway = getOneObjectAtOffset(0,0,RadAway.class);
+        if(RadAway != null)
+          {
+           return true;
+          }
+          else
+              {
+               return false;
+              }
+    }
+    
+     public int getRadEaten()
+    {
+     return radAway;
+    }
+    
 }

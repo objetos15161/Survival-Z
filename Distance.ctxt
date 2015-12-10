@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=a\ b
+comment0.target=double\ distanceBetween(java.awt.Point,\ java.awt.Point)
+comment0.text=\r\n\ Finds\ the\ distance\ between\ two\ Points\r\n\ @param\ a\ Point\ a.\r\n\ @param\ b\ Point\ b.\r\n\ @return\ The\ distance\ between\ the\ two\ points.\r\n
+comment1.params=x1\ y1\ x2\ y2
+comment1.target=double\ distanceBetween(int,\ int,\ int,\ int)
+comment1.text=\r\n\ Finds\ the\ distance\ between\ two\ coordinates\r\n\ @param\ x1\ The\ first\ x\r\n\ @param\ y1\ The\ first\ y\r\n\ @param\ x2\ The\ second\ x\r\n\ @param\ y2\ The\ second\ y\r\n
+comment2.params=a\ b
+comment2.target=double\ distanceBetween(greenfoot.Actor,\ greenfoot.Actor)
+comment2.text=\r\n\ Finds\ the\ distance\ between\ two\ actors'\ centers.\r\n\ @param\ a\ Actor\ a.\r\n\ @param\ b\ Actor\ b.\r\n\ @return\ The\ distance\ between\ the\ center\ of\ Actor\ a,\ and\ the\ center\ of\ Actor\ b\r\n
+comment3.params=a\ pnts
+comment3.target=java.awt.Point\ closestTo(java.awt.Point,\ java.util.List)
+comment3.text=\r\n\ Finds\ the\ Point\ the\ least\ amount\ away\ from\ a\ Point\ of\ reference\r\n\ Precondition\:\ pnts.size()\ >\ 0\r\n\ @param\ a\ The\ reference\ Point.\r\n\ @param\ pnts\ The\ points\ to\ find\ the\ distances\ of\r\n\ @return\ The\ Point\ the\ closest\ to\ the\ reference\ Point\r\n
+comment4.params=a\ pnts
+comment4.target=java.awt.Point\ farthestFrom(java.awt.Point,\ java.util.List)
+comment4.text=\r\n\ Finds\ the\ Point\ farthest\ away\ from\ a\ Point\ of\ reference.\r\n\ Precondition\:\ pnts.size()\ >\ 0\r\n\ @param\ a\ The\ reference\ Point\r\n\ @param\ pnts\ The\ points\ to\ find\ the\ distances\ of\r\n\ @return\ The\ Point\ the\ farthest\ away\ from\ the\ reference\ Point\r\n
+comment5.params=a\ acts
+comment5.target=greenfoot.Actor\ closestTo(greenfoot.Actor,\ java.util.List)
+comment5.text=\r\n\ Finds\ the\ Actor\ closest\ to\ an\ Actor\ of\ reference.\r\n\ Precondition\:\ pnts.size()\ >\ 0\r\n\ @param\ a\ The\ reference\ Actor\r\n\ @param\ acts\ The\ Actors\ to\ find\ the\ distances\ of\r\n\ @return\ The\ Actor\ the\ closest\ to\ the\ Reference\ Actor\r\n
+comment6.params=a\ acts
+comment6.target=greenfoot.Actor\ farthestFrom(greenfoot.Actor,\ java.util.List)
+comment6.text=\r\n\ Finds\ the\ Actor\ farthest\ to\ an\ Actor\ of\ reference.\r\n\ Precondition\:\ pnts.size()\ >\ 0\r\n\ @param\ a\ The\ reference\ Actor\r\n\ @param\ acts\ The\ Actors\ to\ find\ the\ distances\ of\r\n\ @return\ The\ Actor\ the\ farthest\ to\ the\ Reference\ Actor\r\n
+numComments=7

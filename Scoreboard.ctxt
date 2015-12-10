@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Scoreboard()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Scoreboard.\r\n\ \r\n
+comment1.params=
+comment1.target=void\ adicionaObjetos()
+comment1.text=\r\n\ adicionaObjetos-\ adiciona\ o\ titulo\ da\ tabela\ de\ pontua\u00E7\u00F5es\ e\ as\ respetivas\ pontua\u00E7\u00F5es\ a\ este\ cen\u00E1rio\r\n
+numComments=2
